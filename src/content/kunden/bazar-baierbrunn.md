@@ -1,6 +1,5 @@
 ---
 layout: "post"
-title: "Melongame <small>GmbH</small>"
-description: "Für die Melongame GmbH realisierten wir ein Minecraft-gestütztes Shopsystem mit Anbindung zu den gängisten Zahlmethoden."
+title: "Bazar Baierbrunn"
+description: "Der Baierbrunner Bazar wird jede 6 Monate durch die technische Unterstützung von xolf organisiert und verwaltet."
 ---
-# Homeworker

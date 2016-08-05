@@ -1,6 +1,5 @@
 ---
 layout: "post"
-title: "Bazar Baierbrunn"
-description: "Der Baierbrunner Bazar wird jede 6 Monate durch die technische Unterstützung von xolf organisiert und verwaltet."
+title: "pro:tagon <small>GmbH & Co. Kg</small>"
+description: "Für die interne Kundenverwaltung, setzt pro:tagon auf das entwickelte System von xolf"
 ---
-# Homeworker
