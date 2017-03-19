@@ -1,10 +1,15 @@
 {% if posts | length > 0 %}
-<ul class="list-group">
     {% for post in posts %}
-    <li class="list-group-item">
-        <h3><a href="{{ post.url }}">{{ post.title }}</a> <br><small><time pubdate="pubdate">{{ post.date | date('Y-m-d') }}</time></small></h3>
-        <h4>{{ post.description }}</h4>
-    </li>
+    <a href="{{ post.url }}" class="color-black no-underline blog-content">
+        <br />
+        <div>
+            <h2 class="bold">{{ post.title }}</h2>
+            <h4>{{ post.description }}</h4>
+            <time pubdate="pubdate">{{ post.date | date('d.m.Y') }}</time>
+        </div>
+        <br />
+        <br />
+    </a>
+    <hr>
     {% endfor %}
-</ul>
 {% endif %}

@@ -4,12 +4,18 @@
         <a href="{{ post.url }}"><h1>{{ post.title }}</h1></a>
     </div>
     <div class="container">
-        {{ post.content }}
+        <div class="blog-content">
+            <br />
+            <br />
+            <div class="blog-text">
+                {{ post.content }}
+            </div>
+        </div>
 
         {% if isPostLayout %}
             <footer>
-                <p>
-                    Veröffentlicht von {{ site.author.name }} on <time pubdate="pubdate">{{ post.date | date('Y-m-d') }}</time>
+                <p class="text-muted">
+                    Veröffentlicht am <time pubdate="pubdate">{{ post.date | date('d.m.Y') }}</time>
                 </p>
 
                 {% if post.terms_url.tags | length > 0 or post.terms_url.categories | length > 0 %}
