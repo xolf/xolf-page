@@ -7,22 +7,21 @@ provider: "site.kunden"
 max_page: 9
 sort_by: "date"
 ---
-<div class="page-header smaller" style="background-image: url({{ site.url }}/assets/img/office.jpg)">
+<div class="page-header smaller">
 	<h1>Kunden</h1>
 </div>
 <div class="container">
 	<hr class="breaker">
 	<h2 class="text-center">Überzeugte Kunden <small>Von A bis Z</small></h2>
 
-	<div class="row">
+	<div class="customer">
 		{% for produkt in page.pagination.items %}
-			<div class="col-md-4 project-box">
-				<div class="panel panel-default">
-					<div class="panel-body">
-						<h2 class="bold text-center">{{ produkt.title }}</h2>
-						<p>{{ produkt.description }}</p>
-					</div>
-				</div>
+			<div class="customer-box">
+				<h2 class="bold">{{ produkt.title }}</h2>
+				<p>{{ produkt.description }}</p>
+				<a href="{{ produkt.link }}" class="ref-product" target="_blank">
+					Zeig' mal
+				</a>
 			</div>
 		{% endfor %}
 	</div>

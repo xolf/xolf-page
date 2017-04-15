@@ -4,6 +4,7 @@ logo: "xolf-logo.png"
 
 # Your site's domain. E.g: http://yoursite.com
 url: "https://xolf.info"
+#url: "http://localhost:4000"
 
 parsedown_actived: true
 
